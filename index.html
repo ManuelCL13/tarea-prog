@@ -1,0 +1,87 @@
+<!-- Generar una landing page con menu de navegacion por las diferentes secciones:
+Header tipo hero, es decir con imagen de fondo
+Galeria de Imagenes
+Formulario de contacto, debe pedir nombre apellido, telefono, email y un mensaje
+Finalmente añadir el footer con sus datos personales
+
+Debe crear estilo a su eleccion -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page">
+    <title>LA TILINA</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#final">Fin</a></li>
+        </ul>
+    </nav>
+
+    <header class="fondo" id="Inicio">
+       <div>
+            <h1 class="texto-60">"Bar la Tilina"</h1>
+            <h2 class="texto-40">"El mejor lugar para disfrutar de un buen trago"</h2>
+       </div> 
+    </header>
+    <section class="informacion">
+        <h3 class="texto-30">Bienvenido!</h3>
+        <p class="texto-20">En nuestro bar encontraras una gran variedad de tragos, cervezas y vinos. Ven a disfrutar de un buen momento con amigos o en familia.
+            Te esperamos en Av. San Martin 1234, de lunes a viernes de 18 a 00hs y los sabados de 18 a 02hs. <br>
+            Tambien contamos con delivery por toda la ciudad de Los Angeles.
+        </p>
+    </section>
+    <section id="galeria" class="informacion">
+        <h3 class="texto-30 informacion">Nuestros Productos!</h3>
+        <div class="fondo-galeria">
+            <div class="galeria">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="informacion">
+        <h3 class="texto-30">Contactanos</h3>
+        <form class="centrar-contacto" action="" method="">
+            <input type="text" name="nombre" placeholder="Nombre" class="input input-ancho">
+            <input type="text" name="apellido" placeholder="Apellido" class="input input-ancho">
+            <input type="tel" name="telefono" placeholder="Telefono" class="input input-ancho">
+            <input type="email" name="email" placeholder="Email" class="input input-ancho">
+            <textarea name="mensaje" placeholder="Mensaje" class="textarea-ancho"></textarea>
+            <div>
+                <input type="submit" value="Enviar" class="boton">
+                <input type="reset" value="Limpiar" class="boton">
+            </div>
+        </form>
+    </section>
+    <footer id="final" class="footer">
+        <div>
+            <p>Contacto</p>
+        <p><i class="bi bi-file-earmark-person"></i> Bar La Tilina</p>
+        <p><i class="bi bi-building"></i> Av. San Martin 1234, Los Angeles, Chile</p>
+        <p><i class="bi bi-telephone-outbound"></i> Telefono: 123456789</p>
+        <p><i class="bi bi-envelope"></i> Email: barlatilina@gmail.com</p>
+        </div>
+        <div></div>
+        <div class="redes">
+            <p>Redes Sociales</p>
+        <div><a href="www.facebook.com"><i class="bi bi-facebook"></i> Facebook</a></div>
+        <div><a href="www.instagram.com"><i class="bi bi-instagram"></i> Instagram</a></div>
+        <div><a href="www.twitter.com"><i class="bi bi-twitter"></i> Twitter</a></div>
+        </div>
+    </footer>
+</body>
+</html>
