@@ -123,6 +123,15 @@ h2{
     transition: 0.5s;
 }
 
+.galeria-local{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
 .input{
     text-align: center;
     justify-content: center;
