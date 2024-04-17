@@ -30,24 +30,28 @@ h2{
 
 .menu{
     list-style: none;
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
     width: 100%;
-    position: fixed;
     background-color: #481e14;
     padding: 10px;
     overflow: auto;
     position: fixed;
 }
 
+.menu ul {
+    list-style-type: none;
+}
+
 .menu li{
     float: left;
-    margin: 10px;
+    margin: 6px;
 }
 
 .menu li a{
     color: white;
-    display: inline-block;
     margin: 10px;
-    text-align: center;
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
@@ -189,7 +193,6 @@ h2{
     width: 100%;
     text-align: left;
 }
-/* <!-- necesito que las redes sociales esten al lado derecho, y una abajo de la otra --> */
 
 .redes{
     display: inline-block;
@@ -205,4 +208,13 @@ h2{
     justify-content: right;
     align-items: right;
     margin: 10px;
+}
+
+.letra-redes{
+        color: white;
+        font-size: 15px;
+        margin: 10px;
+        font-style: none;
+        display: flex;
+        align-items: flex-start;
 }
